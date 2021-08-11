@@ -1,0 +1,30 @@
+{% include 'includes/navbar.html' %}
+
+<head>
+    <meta http-equiv="refresh" content="60" >
+</head>
+
+  <div class="container-fluid tm-content-container">
+    <ul class="cd-hero-slider mb-0 py-5">
+      <li class="px-3" data-page-no="1">
+
+          <div class="text-center position-relative tm-border-right tm-border-left
+          tm-border-top tm-border-bottom transparent intro-container">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <img src="{{ plotGr() }}" alt="my plot">
+            <img src="{{ plotHi() }}" alt="my plot">
+          </div>      
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+
+{% include 'includes/footer.html' %}
+
+</html>

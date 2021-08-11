@@ -1,0 +1,98 @@
+.alert {
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem
+}
+
+.alert-warning {
+	color: #856404;
+	background-color: #fff3cd;
+	border-color: #ffeeba
+}
+
+.alert-warning hr {
+	border-top-color: #ffe8a1
+}
+
+.alert-warning .alert-link {
+	color: #533f03
+}
+
+.alert-dismissible {
+	padding-right: 4rem
+}
+
+.alert-dismissible .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: .75rem 1.25rem;
+	color: inherit
+}
+
+.modal-header .close {
+	padding: 1rem;
+	margin: -1rem -1rem -1rem auto
+}
+
+.close {
+	float: right;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .5
+}
+
+.close:focus,
+.close:hover {
+	color: #000;
+	text-decoration: none;
+	opacity: .75
+}
+
+.close:not(:disabled):not(.disabled) {
+	cursor: pointer
+}
+
+button.close {
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	-webkit-appearance: none
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity .15s linear
+}
+
+.fade.show {
+	opacity: 1
+}
+
+.modal.fade .modal-dialog {
+	transition: -webkit-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+	-webkit-transform: translate(0, -25%);
+	transform: translate(0, -25%)
+}
+
+.modal-backdrop.fade {
+	opacity: 0
+}
+
+.show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: #0062cc;
+	border-color: #005cbf
+}
+
+.show>.btn-primary.dropdown-toggle:focus {
+	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+}
+

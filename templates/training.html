@@ -1,0 +1,44 @@
+{% include 'includes/navbar.html' %}
+
+{% include 'includes/dynamic_fields.html' %}
+
+<script src="static/js/post_processing.js"></script>
+
+<body>
+    <div class="container-fluid tm-content-container">
+        <ul class="cd-hero-slider mb-0 py-5">
+          <li class="px-3" data-page-no="1">
+            <div class="page-width-1 mx-auto">
+                <div class="d-flex position-relative tm-border-top tm-border-bottom tm-border-right tm-border-left intro-container transparent">
+                    <div class="circle intro-circle-1"></div>
+                    <div class="circle intro-circle-2"></div>
+                    <div class="circle intro-circle-3"></div>
+                    <div class="circle intro-circle-4"></div>
+<!--    <div class="container1">
+        <button class="add_form_field">Add New Field &nbsp; 
+          <span style="font-size:16px; font-weight:bold;">+ </span>
+        </button>
+        <div><input type="text" name="mytext[]"></div>
+    </div>-->
+                    <form action="{{ url_for('get_post_json') }}" method="POST" id="data" role="form">
+                        <div class="container1">
+                            <button class="add_form_field">Add New Field &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
+                            <div>
+                                <input required="required" type="text" name="mytext[]"/>
+                                <input required="required" type="text" name="mytext[]"/>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="sendData()" class="btn btn-primary tm-intro-btn tm-page-link" type="button">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+</body>
+</html>
+
+
+{%include 'includes/footer.html' %}
