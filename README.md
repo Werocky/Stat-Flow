@@ -12,6 +12,7 @@ To start using the software it is required to upload the source code on the jets
 ```
 $ git clone https://github.com/Werocky/Stat-Flow
 $ cd Stat-Flow
+$ pip install -r requirements.txt
 $ python app.py
 ```
 
