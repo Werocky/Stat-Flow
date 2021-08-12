@@ -5,7 +5,7 @@ The project is still in an early state and could have some bugs.
 # Requirements
 Jetson board to host the platform.  
 OpenDataCam (https://github.com/opendatacam/opendatacam) is required since it has been used on the main page to do the detections and data collection.  
-YOLO Darknet (https://pjreddie.com/darknet/yolo/) is required to start training a new model from scratch.  
+YOLO Darknet (https://github.com/AlexeyAB/darknet) is required to start training a new model from scratch.  
 
 # Installation
 To start using the software it is required to upload the source code on the jetson board and run the app.py file.  
